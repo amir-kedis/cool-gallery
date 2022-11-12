@@ -8,6 +8,7 @@
 
 body {
   overflow: hidden;
+  cursor: none;
 }
 
 h1 {
@@ -32,7 +33,6 @@ h1 {
 
 .shape {
   position: absolute;
-  cursor: pointer;
   transition: all 0.1s ease-in-out;
 }
 .shape:hover {
@@ -147,4 +147,16 @@ h1 {
   left: 77%;
   -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.cursur-ball {
+  --dimeter: 100px;
+  width: var(--dimeter);
+  height: var(--dimeter);
+  border-radius: 50%;
+  background-color: #212121;
+  position: fixed;
+  top: 200px;
+  left: 200px;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */
